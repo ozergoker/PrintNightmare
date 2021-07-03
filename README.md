@@ -8,7 +8,7 @@ How to disable the Print Spooler service ?
 
 
 
-CMD Shell
+# CMD Shell
 
 net start | findstr -i "spooler"
 
@@ -18,7 +18,7 @@ REG ADD "HKLM\SYSTEM\CurrentControlSet\Services\Spooler" /v "Start " /t REG_DWOR
 
 
 
-PowerShell
+# PowerShell
 
 Get-Service -Name Spooler
 
@@ -28,7 +28,7 @@ Set-Service -Name Spooler -StartupType Disabled
 
 
 
-Service Control
+# Service Control
 
 sc query Spooler
 
@@ -36,7 +36,7 @@ sc config Spooler start=disabled
 
 
 
-References
+# References
 https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527
 
 #CVE-2021-1675 #PrintNightmare #WindowsPrintSpoolerServiceRCE
