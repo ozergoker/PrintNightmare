@@ -1,4 +1,6 @@
 # PrintNightmare
+# windows-print-spooler-vulnerability.jpg
+
 Windows Print Spooler Service RCE CVE-2021-1675 (PrintNightmare)
 
 How to disable the Print Spooler service ?
